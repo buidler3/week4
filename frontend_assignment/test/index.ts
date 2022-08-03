@@ -25,6 +25,7 @@ describe("Greeters", function () {
 
             const identity = new ZkIdentity(Strategy.MESSAGE, message)
             const identityCommitment = identity.genIdentityCommitment()
+            // external nullifier
             const greeting = "Hello world"
             const bytes32Greeting = ethers.utils.formatBytes32String(greeting)
 
